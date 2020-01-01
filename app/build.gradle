@@ -26,4 +26,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    //LitePal用于对数据库进行操作，OkHttp用于进行网络请求，GSON用于解析json数据，Glide用于加载和展示图片
+    //依赖要写在app下的build.gradle里，不能写在project下
+    implementation 'org.litepal.android:core:1.4.1'  //compile已经过时了，得用implementation
+    implementation 'com.squareup.okhttp3:okhttp:4.3.0'   //需要上https://github.com/square/okhttp上查okhttp的最新版本
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
 }
